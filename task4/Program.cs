@@ -11,15 +11,15 @@ int b = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите число c: ");
 int c = Convert.ToInt32(Console.ReadLine());
 
-if (a > b & a > c)
+if (a >= b & a >= c)
 {
     Console.WriteLine("Максимальное число: a");
 }
-else if (b > a & b > c)
+else if (b >= a & b >= c)
 {
     Console.WriteLine("Максимальное число: b");
 } 
-else if (c > a & c > b)
+else if (c >= a & c >= b)
 {
     Console.WriteLine("Максимальное число: c");
 }
