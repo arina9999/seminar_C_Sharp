@@ -14,7 +14,7 @@ int GetCount(int numberTemp)
     int count = 0;
     while (numberTemp > 0)
     {
-        numberTemp /= 10;
+        numberTemp /= 10; //numberTemp = numberTemp / 10
         count ++;
     }
     return count;
