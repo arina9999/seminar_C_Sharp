@@ -3,7 +3,6 @@
 // 2, 4 -> 16
 
 Console.Clear();
-
 Console.Write("Введите число: ");
 int a = int.Parse(Console.ReadLine()!);
 
