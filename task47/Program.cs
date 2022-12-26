@@ -5,6 +5,14 @@
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
 
+
+Console.WriteLine("Введите размер столбца массива М: ");
+int m = int.Parse(Console.ReadLine()!);
+Console.WriteLine("Введите размер строки массива N: ");
+int n = int.Parse(Console.ReadLine()!);
+CreateArray(m, n);
+Console.WriteLine();
+
 void CreateArray(int a, int b)
 {
     double[,] matrix = new double[a, b];
@@ -18,9 +26,3 @@ void CreateArray(int a, int b)
         Console.WriteLine();
     }
 }
-Console.WriteLine("Введите размер массива М: ");
-int m = int.Parse(Console.ReadLine()!);
-Console.WriteLine("Введите размер массива N: ");
-int n = int.Parse(Console.ReadLine()!);
-CreateArray(m, n);
-Console.WriteLine();
