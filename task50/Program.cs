@@ -21,11 +21,11 @@ int[,] CreateArray(int a, int b)
     return matrix;
 }
 
-void SearchPos(int[,]) array, int pos)
+void SearchPos(int[,] array, int pos)
 {
-    if(pos%10 > Array.GetLength(1) || pos/10 > Array.GetLength(0))
-    Console.WriteLine($"\nЧисла с позицией ({"pos/10}*{pos%10} в массиве нет");
-    else Console.WriteLine($"\nЧисла с позицией ({"pos/10}*{pos%10}) = {array[pos/10 - 1, pos%10 - 1]}");
+    if(pos%10 > array.GetLength(1) || pos/10 > array.GetLength(0))
+    Console.WriteLine($"Числа с позицией ({pos/10}*{pos%10} в массиве нет");
+    else Console.WriteLine($"Числа с позицией ({pos/10}*{pos%10}) = {array[pos/10 - 1, pos%10 - 1]}");
 }
 
 Console.WriteLine("Введите размер двумерного массива");
@@ -33,5 +33,5 @@ int size = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите две позиции массива для поиска X и Y");
 int i = int.Parse(Console.ReadLine()!);
 Console.WriteLine();
-SearchPos(CreateArray(size/10, size%10, i));
+SearchPos(CreateArray(size / 10, size % 10), i);
 Console.WriteLine();
