@@ -10,7 +10,7 @@ int [,] CreateArray(int a, int b)
     int[,] matrix = new int[a, b];
     for (int rows = 0; rows <matrix.GetLength(0); rows++)
     {
-        for (int columns = 0; columns <matrix.GetLength(0); columns++)
+        for (int columns = 0; columns <matrix.GetLength(1); columns++)
         {
             matrix[rows, columns] = new Random().Next(1, 10);
             Console.Write($"{matrix[rows,columns]} ");
@@ -22,7 +22,7 @@ int [,] CreateArray(int a, int b)
 
 void Average(int[,] array)
 {
-    Console.Write("\nСреднееарифметическое каждого столбца = ");
+    Console.Write("Среднееарифметическое каждого столбца = ");
     for (int columns = 0; columns <array.GetLength(1); columns++)
     {
         double sumElem = 0;
