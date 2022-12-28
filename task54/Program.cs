@@ -37,7 +37,7 @@ for (int i = 0; i < numbers.GetLength(0); i++)
     }
 }
 Console.WriteLine();
-Console.WriteLine("Массив с упорядоченными значениями");
+Console.WriteLine("Массив с упорядоченными элементами:");
 PrintArray(numbers);
 
 void FillArrayRandomNumbers(int[,] array)
